@@ -1,7 +1,7 @@
 import api from '../axios';
 import { Event } from '@/types';
 
-class EventsService {
+export class EventsService {
   static async getEvents(): Promise<Event[]> {
     const response = await api.get<Event[]>('/events');
     return response.data;

@@ -12,7 +12,12 @@ export interface Location {
   latitude: number;
   longitude: number;
   address: string;
-  createdBy: string;
+  imageUrl: string;
+  rating: number;
+  popularity: number;
+  openingHours: string;
+  tags: string[];
+  ownerUserId: string;
 }
 
 export interface Event {
@@ -24,4 +29,12 @@ export interface Event {
   endDate: string;
   createdBy: string;
   participants: number;
+}
+
+export interface MapBounds {
+  north: number;
+  south: number;
+  east: number;
+  west: number;
+  zoom: number;
 }

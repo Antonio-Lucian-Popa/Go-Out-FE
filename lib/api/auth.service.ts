@@ -18,7 +18,7 @@ export interface RegisterRequest {
   password: string;
 }
 
-class AuthService {
+export class AuthService {
   private static setTokens(accessToken: string, refreshToken: string) {
     localStorage.setItem('accessToken', accessToken);
     localStorage.setItem('refreshToken', refreshToken);

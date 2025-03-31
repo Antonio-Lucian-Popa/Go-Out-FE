@@ -1,7 +1,7 @@
 import api from '../axios';
 import { User } from '@/types';
 
-class UsersService {
+export class UsersService {
   static async getCurrentUser(): Promise<User> {
     const userId = localStorage.getItem('userId');
     if (!userId) {
